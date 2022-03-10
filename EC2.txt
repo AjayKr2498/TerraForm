@@ -3,6 +3,8 @@ module "ec2_instance" {
   version = "~> 3.0"
 
   name = "single-instance"
+  
+  Everything written in this is wrong
 
   ami                    = "ami-ebd02392"
   instance_type          = "t2.micro"
