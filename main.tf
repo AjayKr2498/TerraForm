@@ -2,7 +2,7 @@ provider "aws" {
     region = "us-east-2"
 }
 
-resource "aws_s3_bucket" "terraform state"{
+resource "aws_s3_bucket" "terraform state" {
     bucket = "demo-ajaykumar240398-terraform"
     #basically it prevents accidental deletion of s3 bucket.
     lifecycle {
@@ -23,7 +23,7 @@ server_side_encryption_configuration {
 }
 }
 
-resource "aws_dynamodb_table" "terraform_locks"{
+resource "aws_dynamodb_table" "terraform_locks" {
     hash_key = "LockID"
     name = "terraform-demo-locks"
     billing_mode = "PAY_PER_REQUEST"
