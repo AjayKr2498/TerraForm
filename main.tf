@@ -20,7 +20,7 @@ server_side_encryption_configuration {
             sse_algorithm = "AES256"
         }
     }
-}
+  }
 }
 
 # resource "aws_dynamodb_table" "terraform_locks" {
@@ -30,5 +30,3 @@ server_side_encryption_configuration {
 #     attribute {
 #         name = "LockID"
 #         type = "S"
-    }
-}
