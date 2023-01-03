@@ -2,7 +2,7 @@ provider "aws" {
     region = "us-east-2"
 }
 
-resource "aws_s3_bucket" "terraform state" {
+resource "aws_s3_bucket" "terraform-state" {
     bucket = "demo-ajaykumar240398-terraform"
     #basically it prevents accidental deletion of s3 bucket.
     lifecycle {
