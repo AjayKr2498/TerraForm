@@ -1,5 +1,5 @@
 terraform {
-  backend "S3" {
+  backend "s3" {
    ##bucket name
    bucket = "demo-ajaykumar240398-terraform"
    key = "s3/terraform.tfstate"
