@@ -1,5 +1,5 @@
 provider "aws" {
-    region - "us-east-2"
+    region = "us-east-2"
 }
 
 resource "aws_s3_bucket" "terraform state"{
@@ -11,7 +11,7 @@ resource "aws_s3_bucket" "terraform state"{
     }
     #Enable versioning to see full revision of our state files
     versioning {
-        enabled - true
+        enabled = true
     }
 #enable server side encryption(SSE)
 server_side_encryption_configuration {
