@@ -1,5 +1,5 @@
 terraform {
-  backend "demoS3" {
+  backend "S3" {
    #bucket name
    bucket = "demo-ajaykumar240398-terraform"
    key = ""
