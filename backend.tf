@@ -5,7 +5,7 @@ terraform {
    key = "s3/terraform.tfstate"
    region = "us-east-2"
    # DynamoDB table name
-   dynamo_table = "terraform-demo-locks"
+   dynamodb_table = "terraform-demo-locks"
    encrypt = true
   }
 }
