@@ -3,12 +3,7 @@ provider "aws" {
  }
 
 resource "aws_s3_bucket" "s3" {
-      bucket = "000-test-000-test-1"
-#basically it prevents accidental deletion of s3 bucket.
-      lifecycle {
-          prevent_destroy = true
-       
-      }
+      bucket = "000-test-000-test-demo"
 #Enable versioning to see full revision of our state files
       versioning {
           enabled = true
