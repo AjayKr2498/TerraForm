@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
    ##bucket name
-   bucket = "demo-ajaykumar240398-terraform"
+   bucket = "ajay-2498-demo-test"
    key = "s3/terraform.tfstate"
    region = "us-east-2"
    # DynamoDB table name
