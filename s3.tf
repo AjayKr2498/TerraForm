@@ -3,7 +3,7 @@ provider "aws" {
  }
 
 resource "aws_s3_bucket" "s3" {
-      bucket = "ajay-2498-demo-test"
+      bucket = "000-test-000"
 #basically it prevents accidental deletion of s3 bucket.
       lifecycle {
           prevent_destroy = true
