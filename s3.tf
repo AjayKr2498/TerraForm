@@ -3,7 +3,7 @@ provider "aws" {
  }
 
 resource "aws_s3_bucket" "s3" {
-      bucket = "000-test-000-test-demo"
+      bucket = "000-test-000-test-demo" 
 #Enable versioning to see full revision of our state files
       versioning {
           enabled = true
