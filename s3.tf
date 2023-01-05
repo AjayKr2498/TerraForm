@@ -2,7 +2,7 @@ provider "aws" {
      region = "us-east-2"
  }
 
-resource "aws_s3_bucket" {
+resource "aws_s3_bucket" "s3" {
       bucket = "ajay-2498-demo-test"
 #basically it prevents accidental deletion of s3 bucket.
       lifecycle {
