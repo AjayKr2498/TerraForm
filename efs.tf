@@ -37,9 +37,9 @@ resource "aws_security_group" "ingress-efs-test" {
 
 }
 #Using lifecycle policy
-  lifecycle_policy {
-    transition_to_ia = "AFTER_30_DAYS"
-  }
+#   lifecycle_policy {
+#     transition_to_ia = "AFTER_30_DAYS"
+#   }
 
 #Using EFS policy
 resource "aws_efs_file_system_policy" "policy" {
